@@ -1,0 +1,733 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Golos Text", sans-serif;
+}
+
+.header__top {
+  background-color: rgba(248, 248, 249, 0.89);
+}
+
+.header__top__contenier {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-group {
+  max-width: 664.11px;
+  gap: 24px;
+}
+.btn-group .btn-primary {
+  font-size: 12px;
+  color: rgb(108, 113, 120);
+  font-weight: 400;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.btn-group .btn-primary:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.header__top__left {
+  display: flex;
+  width: 218px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__top__left .location a, .header__top__left .contact__phone a {
+  text-decoration: none;
+  transition: all 0.6s ease-out;
+}
+.header__top__left .location a:hover span, .header__top__left .contact__phone a:hover span {
+  color: rgb(0, 0, 0);
+}
+.header__top__left .location a:hover svg, .header__top__left .contact__phone a:hover svg {
+  stroke: rgb(0, 0, 0);
+}
+.header__top__left .location span, .header__top__left .contact__phone span {
+  font-size: 12px;
+  color: rgb(108, 113, 120);
+  font-weight: 400;
+  margin-left: 4px;
+  text-decoration: none;
+  transition: all 0.6s ease-out;
+}
+.header__top__left .location svg, .header__top__left .contact__phone svg {
+  width: 14px;
+  transition: all 0.6s ease-out;
+  height: 14px;
+}
+.header__nav__contenier {
+  max-width: 1326px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.header__nav {
+  position: sticky;
+  background-color: white;
+  top: 0;
+}
+
+.header__nav__contenier {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 10px 15px;
+  background-color: white;
+  margin: 0px auto;
+}
+.header__nav__contenier .logo img {
+  width: 153px;
+  height: 18px;
+}
+.header__nav__contenier .header__nav__input {
+  display: flex;
+  max-width: 100%;
+  gap: 16px;
+}
+.header__nav__contenier .header__nav__input button {
+  background-color: rgb(217, 46, 21);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.header__nav__contenier .header__nav__input button svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+.header__nav__contenier .header__nav__input .input__img {
+  display: flex;
+  width: 512px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  border-radius: 14px;
+  border: rgb(245, 245, 246) 1px solid;
+}
+.header__nav__contenier .header__nav__input .input__img input {
+  border: none;
+  outline: none;
+  margin: 0px 20px;
+}
+.header__nav__contenier .header__nav__input .input__img button {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.header__links {
+  display: flex;
+  max-width: 437px;
+  gap: 12px;
+}
+.header__links a {
+  text-decoration: none;
+}
+.header__links .box__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+.header__links .box__link span {
+  font-weight: 700;
+  color: rgb(29, 36, 47);
+  font-size: 14px;
+}
+
+.header__top__sleder {
+  padding: 6px 15px 16px;
+}
+.header__top__sleder .sleder__contenier {
+  overflow: auto;
+  display: flex;
+  width: 1500px;
+  gap: 29px;
+}
+.header__top__sleder .sleder__contenier a {
+  text-decoration: none;
+  color: rgb(108, 113, 120);
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.6s ease-out;
+}
+.header__top__sleder .sleder__contenier a:hover {
+  color: black;
+}
+
+.header__bottom__slader {
+  padding-top: 16px;
+}
+
+.main__top__heading {
+  margin-top: 36px;
+}
+
+.main__top__contenier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__top__contenier h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(29, 36, 47);
+}
+.main__top__contenier a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(11, 43, 94);
+  font-size: 14px;
+  transition: all 0.6s ease-out;
+}
+.main__top__contenier a:hover {
+  color: gray;
+}
+
+.top__cards__contenier {
+  overflow: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  max-width: 1410px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.top__cards__contenier a {
+  text-decoration: none;
+}
+.top__cards__contenier a .main__top__frist {
+  width: 226px;
+  border: 1px solid rgb(245, 245, 246);
+  border-radius: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  left: 0;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.top__cards__contenier a svg {
+  padding: 10px;
+  background-color: rgba(217, 46, 21, 0.06);
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+}
+.top__cards__contenier a svg path {
+  fill: #d92e15;
+}
+.top__cards__contenier a span {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(29, 36, 47);
+}
+
+.tv__cards__heading h3 {
+  font-size: 24px;
+  color: rgb(29, 36, 47);
+  font-weight: 700;
+}
+
+.frist__tv__card {
+  max-width: 215px;
+  padding: 12px;
+}
+.frist__tv__card .p-opacty {
+  opacity: 0;
+}
+.frist__tv__card p {
+  font-weight: 500;
+  color: rgb(108, 113, 120);
+  font-size: 12px;
+  text-decoration: line-through;
+  margin-top: 8px;
+}
+.frist__tv__card .sucsess {
+  display: block;
+  color: rgb(255, 255, 255);
+  background: rgb(14, 126, 46);
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.frist__tv__card h4 {
+  font-size: 18px;
+  color: rgb(29, 36, 47);
+  margin-top: 4px;
+  font-weight: bolder;
+}
+.frist__tv__card .basic {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 4px 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  border: 1px solid rgb(11, 43, 94);
+  opacity: 0.8;
+}
+.frist__tv__card h3 {
+  font-size: 14px;
+  color: rgb(108, 113, 120);
+  line-height: 150%;
+  font-weight: 400;
+  text-align: left;
+  height: 38px;
+  overflow: hidden;
+  margin-top: 12px;
+  -webkit-box-orient: vertical;
+}
+.frist__tv__card .reiting {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.frist__tv__card .reiting img {
+  width: 16px;
+  height: 24px;
+}
+.frist__tv__card .reiting span {
+  line-height: 14px;
+  font-size: 14px;
+  color: rgb(108, 113, 120);
+  font-weight: 500;
+}
+
+.first__tv__card__footer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.first__tv__card__footer button {
+  border: none;
+}
+.first__tv__card__footer .footer__basket {
+  padding: 14px;
+  background-color: rgb(217, 46, 21);
+  border-radius: 10px;
+}
+.first__tv__card__footer .footer__basket svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  fill: white;
+  stroke: white;
+}
+.first__tv__card__footer .footer__basket svg path {
+  fill: white;
+  stroke: white;
+}
+.first__tv__card__footer .footer__scales, .first__tv__card__footer .footer__hearth {
+  padding: 14px;
+  background-color: rgb(247, 248, 248);
+  border-radius: 10px;
+}
+.first__tv__card__footer .footer__scales svg, .first__tv__card__footer .footer__hearth svg {
+  width: 20px;
+  height: 20px;
+}
+.first__tv__card__footer .footer__scales svg path, .first__tv__card__footer .footer__hearth svg path {
+  stroke: gray;
+  fill: gray;
+}
+.all__tv__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new__btn {
+  background-color: rgb(211, 33, 64) !important;
+  border: none !important;
+}
+
+.tv__cards__heading {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.all__new__cards, .about__mediapark, .all__company__logo, .all__computer__card, .house__hold__cards, .upper__cards, .all__tv__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  gap: 6px;
+}
+
+.upper__cards .frist__tv__card .btn-color {
+  border: none;
+  background-color: rgb(253, 245, 243);
+  color: rgb(217, 46, 21);
+}
+.upper__cards .frist__tv__card .upper__frist__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.upper__cards .frist__tv__card .upper__frist__button .new__btn {
+  background: rgb(255, 0, 84) !important;
+}
+.upper__cards .frist__tv__card .upper__frist__button svg {
+  width: 20px;
+  height: 20px;
+}
+.upper__cards .frist__tv__card .upper__frist__button svg path {
+  fill: gray;
+}
+.upper__cards .frist__tv__card .upper__basket {
+  width: 100%;
+  max-height: 52px;
+}
+.upper__cards .frist__tv__card .upper__basket h2 {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.ps5__carusel {
+  margin-top: 54px;
+  margin-bottom: 32px;
+}
+
+.aligin-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text-align {
+  text-align: center;
+  max-width: 200px;
+}
+
+.computer__card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  background-color: rgb(248, 248, 249);
+  border-radius: 12px;
+  height: auto;
+}
+.computer__card__footer h3 {
+  margin: 0px;
+  color: rgb(29, 36, 47);
+  font-weight: 500;
+}
+
+.h3-background {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.h3-padding {
+  padding: 11px;
+}
+
+.frist__logo {
+  padding: 31px 52px;
+  border: rgb(245, 245, 246) 2px solid;
+  border-radius: 20px;
+  max-width: 238px;
+}
+.frist__logo imG {
+  justify-content: center;
+}
+
+.all__company__logo {
+  gap: 30px;
+}
+
+.delivery__card {
+  padding: 16px;
+  max-width: 226px;
+  width: 100%;
+  height: 238px;
+  border-radius: 20px;
+  border: rgb(245, 245, 246) 2px solid;
+}
+.delivery__card .delivery__card__img {
+  padding: 12px;
+  background-color: rgb(253, 245, 243);
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+}
+.delivery__card .delivery__card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 190px;
+  height: 114px;
+  margin-top: 16px;
+}
+.delivery__card .delivery__card__text h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.delivery__card .delivery__card__text p {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(108, 113, 120);
+  line-height: 150%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.about__mediapark {
+  height: 300px;
+}
+
+.hero {
+  background-color: rgb(248, 248, 249);
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 330px;
+  margin-top: 72px;
+  position: relative;
+}
+.hero .hero__contenier {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.hero .hero__img {
+  position: absolute;
+  right: 0;
+  top: -36px;
+}
+.hero .hero__text {
+  position: absolute;
+  bottom: -300px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.hero .hero__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.hero .hero__text p {
+  color: rgb(108, 113, 120);
+  line-height: 24px;
+  font-weight: 400;
+  width: 368px;
+}
+.hero .hero__text .hero__buttons {
+  gap: 16px;
+  display: flex;
+}
+
+.footer__top {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 64px;
+  padding-bottom: 48px;
+  background-color: rgb(29, 36, 47);
+}
+.footer__top nav span {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  display: block;
+}
+.footer__top nav p {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+.footer__top nav a {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: block;
+}
+.footer__top nav h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.img__card {
+  background-color: rgb(34, 44, 58);
+  align-items: center;
+  width: 144px;
+  height: 53px;
+  border-radius: 12px;
+  justify-content: center;
+  display: flex;
+}
+
+.item__logo {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 341px;
+}
+
+.cards__item p {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.information {
+  width: 193px;
+}
+.information .information__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.information h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.information a {
+  margin-left: 0px;
+  color: rgb(245, 245, 246);
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.6s ease-out;
+}
+.information a:hover {
+  opacity: 1;
+}
+
+.footer__top__container, .footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links {
+  gap: 20px;
+}
+
+.social__network {
+  display: flex;
+  gap: 24px;
+}
+.social__network svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.footer__bottom {
+  background-color: rgb(34, 44, 58);
+}
+
+.footer__bottom__contenier {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer__bottom__contenier a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .input__img {
+    max-width: 400px;
+    width: 100%;
+  }
+  .header__nav__contenier {
+    max-width: 1150px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    display: none;
+  }
+  .header__links {
+    display: none;
+  }
+  #none {
+    display: none !important;
+  }
+  #input {
+    max-width: 1024px;
+    width: 100%;
+  }
+  .header__nav__contenier {
+    max-width: 1024px;
+  }
+  .footer__top {
+    display: none;
+  }
+  .hero__img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logo {
+    display: none;
+  }
+  .header__links {
+    display: none;
+  }
+  #none {
+    display: none !important;
+  }
+  #input {
+    max-width: 1024px;
+    width: 100%;
+  }
+  .header__nav__contenier {
+    max-width: 740px;
+  }
+  .header__top {
+    display: none;
+  }
+  .footer__top {
+    display: none;
+  }
+  .hero__img {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

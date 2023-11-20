@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Normalize css -->
+<link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- Fonts -->
+<link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- Styles -->
+<link rel="stylesheet" href="./css/main.css">
+
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+
+    <script src="./script.js"></script>
+
+    <title>Media park</title>
+</head>
+<body>
+    
+        <div class="header__top">
+            <div class="container header__top__contenier">
+                <div class="header__top__left">
+                    <div class="contact__phone">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="call"><path d="M19.44,13c-.22,0-.45-.07-.67-.12a9.44,9.44,0,0,1-1.31-.39,2,2,0,0,0-2.48,1l-.22.45a12.18,12.18,0,0,1-2.66-2,12.18,12.18,0,0,1-2-2.66L10.52,9a2,2,0,0,0,1-2.48,10.33,10.33,0,0,1-.39-1.31c-.05-.22-.09-.45-.12-.68a3,3,0,0,0-3-2.49h-3a3,3,0,0,0-3,3.41A19,19,0,0,0,18.53,21.91l.38,0a3,3,0,0,0,2-.76,3,3,0,0,0,1-2.25v-3A3,3,0,0,0,19.44,13Zm.5,6a1,1,0,0,1-.34.75,1.05,1.05,0,0,1-.82.25A17,17,0,0,1,4.07,5.22a1.09,1.09,0,0,1,.25-.82,1,1,0,0,1,.75-.34h3a1,1,0,0,1,1,.79q.06.41.15.81a11.12,11.12,0,0,0,.46,1.55l-1.4.65a1,1,0,0,0-.49,1.33,14.49,14.49,0,0,0,7,7,1,1,0,0,0,.76,0,1,1,0,0,0,.57-.52l.62-1.4a13.69,13.69,0,0,0,1.58.46q.4.09.81.15a1,1,0,0,1,.79,1Z"></path></svg> <span> +998 71 203 33 33</span></a>
+                    </div>
+                    <div class="location">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 16 16" viewBox="0 0 16 16" id="pin"><path d="M12.161,2.724c-2.294-2.295-6.028-2.295-8.322,0c-2.294,2.294-2.294,6.028,0,8.322L8,15.207l4.161-4.161   C14.456,8.751,14.456,5.018,12.161,2.724z M11.454,10.339L8,13.793l-3.454-3.454c-1.904-1.905-1.904-5.003,0-6.908   c1.904-1.904,5.004-1.904,6.908,0C13.358,5.335,13.358,8.434,11.454,10.339z"></path><path d="M8,4C6.346,4,5,5.346,5,7s1.346,3,3,3s3-1.346,3-3S9.654,4,8,4z M8,9C6.897,9,6,8.103,6,7s0.897-2,2-2s2,0.897,2,2   S9.103,9,8,9z"></path></svg><span>Ташкент</span> </a>
+                    </div>
+                </div>
+                <div class="header__top__right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary first__button">О нас</button>
+                        <button type="button" class="btn btn-primary">Партнёрство</button>
+                        <button type="button" class="btn btn-primary third__button">Юридическим лицам</button>
+                        <button type="button" class="btn btn-primary">Доставка</button>
+                        <button type="button" class="btn btn-primary">Магазины</button>
+                        <button type="button" class="btn btn-primary ">Свяжитесь с нами!</button>
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-primary dropdown-toggle last__button" data-bs-toggle="dropdown">RUS</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">UZ</a></li>
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="container header__nav__contenier">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./img/mediapark.uz_.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header__nav__input" id="input">
+                    <button id="none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>Katalog</button>
+                    <div class="input__img">
+                        <input class="responsive" type="text" placeholder="Искать товары">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+                    </div>
+                </div>
+                <div class="header__links">
+                    <a href="#">
+                        <div class="box__link">
+                            <img src="./img/box.png" width="24" height="24" alt="box icon">
+                            <span>Статус заказа</span>
+                        </div>
+                    </a>
+                    <a href="#"><div class="box__link">
+                        <img src="./img/qualty.png" width="24" height="24" alt="box icon">
+                        <span>Сравнить</span>
+                </div></a>
+                <a href="#">
+                    <div class="box__link">
+                        <img src="./img/basket.png" width="24" height="24" alt="box icon">
+                        <span>Корзина</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="box__link">
+                        <img src="./img/hearth.png" width="24" height="24" alt="box icon">
+                        <span>Избранное</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="box__link">
+                        <img src="./img/avatar.png" width="24" height="24" alt="box icon">
+                        <span>Войти</span>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__sleder">
+            <div class="header__top__sleder">
+                <div class="container sleder__contenier">
+                        <a href="#">Акции</a>                 
+                        <a href="#"> Холодильники</a>
+                        <a href="#">Apple</a>
+                        <a href="#">Ноутбуки</a>
+                        <a href="#">Стиральные</a>
+                        <a href="#">Кофемашины</a>
+                        <a href="#">Варочные </a>
+                        <a href="#">Смарт</a>
+                        <a href="#">Кондиционеры</a>
+                        <a href="#">Кондиционеры</a>
+                        <a href="#">Утюги</a>
+                        <a href="#">Блендеры</a>
+                        <a href="#">Все </a>
+                </div>
+                </div>
+            <div class="header__bottom__slader">
+                <div class="container bottom__slader__contenier">
+                    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/lg_products.jpeg" alt="Lifes good company" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/aksiya.jpeg" alt="Aksiya" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/solfy.jpeg" alt="Solfy" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+                </div>
+            </div>
+            </div>
+            
+        
+    
+    <section class="main">
+        <div class="main__top__heading">
+            <div class="container main__top__contenier">
+                <h3>Популярные категории</h3>
+                <a href="#">Посмотреть все</a>
+            </div>
+        </div>
+        <div class="main__top__cards">
+            <div class="container top__cards__contenier">
+                <a href="#">
+                    <div class="main__top__frist">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/></svg>
+                            <span>Все ноутбуки</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main__top__frist">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 64V352H576V64H64zM0 64C0 28.7 28.7 0 64 0H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM128 448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H128c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
+                            <span>Все телевизоры</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main__top__frist">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="vacuum-cleaner"><g data-name="20-vacuum-cleaner"><path fill="transparent" stroke="#d92e15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7,23h4a0,0,0,0,1,0,0v4a0,0,0,0,1,0,0H3a0,0,0,0,1,0,0v0A4,4,0,0,1,7,23Z"></path><circle cx="25" cy="23" r="4" fill="none" stroke="#d92e15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><path fill="none" stroke="#d92e15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M29,17V13H21a6,6,0,0,0-6,6v6h2"></path><path fill="none" stroke="#d92e15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21,13V8a3,3,0,0,0-3-3h0A3,3,0,0,0,15.2,6.8L8,23"></path></g></svg>
+                            <span>Пылесосы</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main__top__frist">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" id="washing-machine"><g fill="none" fill-rule="evenodd"><path fill="#d92e15" fill-rule="nonzero" d="M7,5 L7,25 L25,25 L25,5 L7,5 Z M7,3 L25,3 C26.1045695,3 27,3.8954305 27,5 L27,25 C27,26.1045695 26.1045695,27 25,27 L7,27 C5.8954305,27 5,26.1045695 5,25 L5,5 C5,3.8954305 5.8954305,3 7,3 Z"></path><path fill="#d92e15" fill-rule="nonzero" d="M21.0041356,5.93538253 C21.0041356,5.38309778 21.4518509,4.93538253 22.0041356,4.93538253 C22.5564204,4.93538253 23.0041356,5.38309778 23.0041356,5.93538253 L23.0041356,7.98762895 C23.0041356,8.5399137 22.5564204,8.98762895 22.0041356,8.98762895 C21.4518509,8.98762895 21.0041356,8.5399137 21.0041356,7.98762895 L21.0041356,5.93538253 Z" transform="rotate(-90 22.004 6.962)"></path><path fill="#d92e15" fill-rule="nonzero" d="M18.0097808 8C17.4574961 8 17.0097808 7.55228475 17.0097808 7 17.0097808 6.44771525 17.4574961 6 18.0097808 6 18.5620656 6 19.0097808 6.44771525 19.0097808 7 19.0097808 7.55228475 18.5620656 8 18.0097808 8zM15.0214324 8C14.4691477 8 14.0214324 7.55228475 14.0214324 7 14.0214324 6.44771525 14.4691477 6 15.0214324 6 15.5737172 6 16.0214324 6.44771525 16.0214324 7 16.0214324 7.55228475 15.5737172 8 15.0214324 8zM8.00521466 25.9913893C8.00521466 25.4391045 8.45292991 24.9913893 9.00521466 24.9913893 9.55749941 24.9913893 10.0052147 25.4391045 10.0052147 25.9913893L10 27.9967884C10 28.5490732 9.55228475 28.9967884 9 28.9967884 8.44771525 28.9967884 8 28.5490732 8 27.9967884L8.00521466 25.9913893zM22.0041356 25.9987842C22.0041356 25.4464995 22.4518509 24.9987842 23.0041356 24.9987842 23.5564204 24.9987842 24.0041356 25.4464995 24.0041356 25.9987842L24.0041356 27.9967884C24.0041356 28.5490732 23.5564204 28.9967884 23.0041356 28.9967884 22.4518509 28.9967884 22.0041356 28.5490732 22.0041356 27.9967884L22.0041356 25.9987842zM16 24C12.6862915 24 10 21.3137085 10 18 10 14.6862915 12.6862915 12 16 12 19.3137085 12 22 14.6862915 22 18 22 21.3137085 19.3137085 24 16 24zM16 22C18.209139 22 20 20.209139 20 18 20 15.790861 18.209139 14 16 14 13.790861 14 12 15.790861 12 18 12 20.209139 13.790861 22 16 22z"></path><path fill="#d92e15" fill-rule="nonzero" d="M16,15 C16.5522847,15 17,15.4477153 17,16 C17,16.5522847 16.5522847,17 16,17 C15.4477153,17 15,17.4477153 15,18 C15,18.5522847 14.5522847,19 14,19 C13.4477153,19 13,18.5522847 13,18 C13,16.3431458 14.3431458,15 16,15 Z"></path><polygon fill="#d92e15" fill-rule="nonzero" points="6 11.02 6 9.02 26 9.02 26 11.02"></polygon></g></svg>
+                            <span>Стиральные машины</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main__top__frist">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 64 64" id="refrigerator"><rect width="29" height="55.42" x="17.5" y="4.29" fill="none" stroke="#d92e15" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" rx="6"></rect><line x1="46.5" x2="17.5" y1="25.5" y2="25.5" fill="none" stroke="#d92e15" stroke-miterlimit="10" stroke-width="3"></line><line x1="24.39" x2="24.39" y1="19.75" y2="15" fill="none" stroke="#d92e15" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></line><line x1="24.39" x2="24.39" y1="31.25" y2="38" fill="none" stroke="#d92e15" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></line></svg>
+                            <span>Холодильники</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main__top__frist">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 298.67 512" id="iphone-8"><g data-name="Layer 2"><path d="M238.48,512H60.19C27,512,0,484.29,0,450.23V61.78C0,27.72,27,0,60.19,0H238.48c33.19,0,60.19,27.72,60.19,61.78v76.51a10.67,10.67,0,0,1-21.34,0V61.78c0-22.3-17.42-40.45-38.85-40.45H60.19c-21.43,0-38.86,18.15-38.86,40.45V450.23c0,22.3,17.43,40.44,38.86,40.44H238.48c21.43,0,38.85-18.14,38.85-40.44V224.39a10.67,10.67,0,0,1,21.34,0V450.23C298.67,484.29,271.67,512,238.48,512Z"></path><path d="M149.33 426.67a10.67 10.67 0 1 1-10.66 10.67 10.69 10.69 0 0 1 10.66-10.67m0-21.33a32 32 0 1 0 32 32 32 32 0 0 0-32-32zM181.33 64h-64a10.67 10.67 0 0 1 0-21.33h64a10.67 10.67 0 1 1 0 21.33zM74.67 42.67A10.67 10.67 0 1 0 85.33 53.34 10.67 10.67 0 0 0 74.67 42.67z"></path><circle cx="288" cy="181.34" r="10.67" fill="#fff"></circle><path d="M288,170.67a10.67,10.67,0,1,0,10.67,10.67A10.67,10.67,0,0,0,288,170.67Z"></path></g></svg>
+                            <span>Все смартфоны</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main__machine__cards">
+            <div class="tv__cards">
+                <div class="container tv__cards__contenier">
+                    <div class="tv__cards__heading">
+                        <h3>"Artel - по цене завода"</h3>
+                    </div>
+                    <div class="all__tv__cards">
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess">По цене завода</button>
+                            <img src="./img/artel__tv.jpeg" alt="Artel tv" width="189" height="190">
+                            <p>3 161 000 cум</p>
+                            <h4>2 812 000 cум</h4>
+                            <button type="button" class="btn basic">от 323 379сум/мес</button>
+                            <h3>Телевизор Samsung 32N4000UZ</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess">По цене завода</button>
+                            <img src="./img/tv__img2.webp" alt="Artel tv" width="189" height="190">
+                            <p>2 866 000 cум</p>
+                            <h4>2 573 000 cум</h4>
+                            <button type="button" class="btn basic">от 295 894сум/мес</button>
+                            <h3>Телевизор Shivaki US43H3303</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess">По цене завода</button>
+                            <img src="./img/tv__img3.webp" alt="Artel tv" width="189" height="190">
+                            <p>3 411 000 cум</p>
+                            <h4>3 063 000 cум</h4>
+                            <button type="button" class="btn basic">от 352 245сум/мес</button>
+                            <h3>Телевизор Shivaki US43H3403 Smart</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess">По цене завода</button>
+                            <img src="./img/tv__img4.jpeg" alt="Artel tv" width="189" height="190">
+                            <p>1 538 000 cум</p>
+                            <h4>1 381 000 cум</h4>
+                            <button type="button" class="btn basic">от 158 814сум/мес</button>
+                            <h3>Телевизор Artel UA32H741013</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess">По цене завода</button>
+                            <img src="./img/tv__img5.webp" alt="Artel tv" width="189" height="190">
+                            <p>3 243 000 cум</p>
+                            <h4>2 912 000 cум</h4>
+                            <button type="button" class="btn basic">от 334 879сум/мес</button>
+                            <h3>Телевизор Artel A43KF5500 Smart TV</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess">По цене завода</button>
+                            <img src="./img/tv__img6.jpeg" alt="Artel tv" width="189" height="190">
+                            <p>2 656 000</p>
+                            <h4>2 385 000 cум</h4>
+                            <button type="button" class="btn basic">от 274 274сум/мес</button>
+                            <h3>Телевизор Artel 32AH90G Smart</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess">По цене завода</button>
+                            <img src="./img/tv__img7.webp" alt="Artel tv" width="189" height="190">
+                            <p>2 656 000</p>
+                            <h4>2 385 000 cум</h4>
+                            <button type="button" class="btn basic">от 274 274сум/мес</button>
+                            <h3>Телевизор Artel 32AH90G Smart</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tv__cards__heading">
+                        <h3>Новинки</h3>
+                    </div>
+                    <div class="all__new__cards">
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess new__btn">Новинка</button>
+                            <img src="./img/new__img1.jpeg" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>750 000 cум</h4>
+                            <button type="button" class="btn basic">от 86 249сум/мес</button>
+                            <h3>Термопот Lamo LM-TH45</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess new__btn">Новинка</button>
+                            <img src="./img/new__img2.webp" alt="Artel tv" width="189" height="190">
+                            <p>2 410 000 cум</p>
+                            <h4>2 310 000 cум</h4>
+                            <button type="button" class="btn basic">от 265 649сум/мес</button>
+                            <h3>Смартфон Oppo A38 4/128 Gold</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess new__btn">Новинка</button>
+                            <img src="./img/new__img3.webp" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>15 596 000 cум</h4>
+                            <button type="button" class="btn basic">от 1 793 540сум/мес</button>
+                            <h3>Морозильник BOSCH GSN36AI31U</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess new__btn">Новинка</button>
+                            <img src="./img/new__img4.jpeg" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>19 203 000 cум</h4>
+                            <button type="button" class="btn basic">от 1 2 208 344сум/мес</button>
+                            <h3>Стиральная машина Bosch WDU28590OE</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess new__btn">Новинка</button>
+                            <img src="./img/new__img5.png" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>12 410 000 cум</h4>
+                            <button type="button" class="btn basic">от 1 1 427 150сум/мес</button>
+                            <h3>Посудомоечная машина Bosch SMS6HMW28Q</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess new__btn">Новинка</button>
+                            <img src="./img/new__img6.jpeg" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>3 899 000 cум</h4>
+                            <button type="button" class="btn basic">от 1 448 385сум/мес</button>
+                            <h3>Смартфон Realme 11 4G 8/256 RMX3636 Black</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <button type="button" class="btn btn-success sucsess new__btn">Новинка</button>
+                            <img src="./img/new__img7.webp" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>3 899 000 cум</h4>
+                            <button type="button" class="btn basic">от 1 448 385сум/мес</button>
+                            <h3>Смартфон Realme 11 4G 8/256 RMX3636 Black</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tv__cards__heading">
+                        <h3>Хит продаж</h3>
+                    </div>
+                    <div class="upper__cards">
+                        <div class="frist__tv__card">
+                            <div class="upper__frist__button">
+                                <button type="button" class="btn btn-success sucsess new__btn">Хит продаж</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                            <img src="./img/upper__img1.webp" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">2 410 000 cум</p>
+                            <h4>6 588 000 cум</h4>
+                            <button type="button" class="btn basic btn-color">от 265 649сум/мес</button>
+                            <h3>Смартфон Vivo V29 12/256GB Black</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket upper__basket">
+                                    <h2>В корзину</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <div class="upper__frist__button">
+                                <button type="button" class="btn btn-success sucsess new__btn">Хит продаж</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                            <img src="./img/upper__img2.jpeg" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">2 410 000 cум</p>
+                            <h4>1 063 000 cум</h4>
+                            <button type="button" class="btn basic btn-color">от 122 245сум/мес</button>
+                            <h3>Масляный радиатор Shivaki SH-OH-1152</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket upper__basket">
+                                    <h2>В корзину</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <div class="upper__frist__button">
+                                <button type="button" class="btn btn-success sucsess new__btn">Хит продаж</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                            <img src="./img/upper__img3.webp" alt="Artel tv" width="189" height="190">
+                            <p>8 415 000 cум</p>
+                            <h4>7 556 000 cум</h4>
+                            <button type="button" class="btn basic btn-color">от 868 940сум/мес</button>
+                            <h3>Холодильник Samsung ART RB-29 FERNDSA</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket upper__basket">
+                                    <h2>В корзину</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <div class="upper__frist__button">
+                                <button type="button" class="btn btn-success sucsess new__btn">Хит продаж</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                            <img src="./img/upper__img4.webp" alt="Artel tv" width="189" height="190">
+                            <p>6 456 000 cум</p>
+                            <h4>5 686 000 cум</h4>
+                            <button type="button" class="btn basic btn-color">от 653 889сум/мес</button>
+                            <h3>Стиральная машина Samsung WW60J32G0PSULD</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket upper__basket">
+                                    <h2>В корзину</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <div class="upper__frist__button">
+                                <button type="button" class="btn btn-success sucsess new__btn">Хит продаж</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                            <img src="./img/upper__img5.jpeg" alt="Artel tv" width="189" height="190">
+                            <p>1 606 000 cум</p>
+                            <h4>1 431 000 cум</h4>
+                            <button type="button" class="btn basic btn-color">от 164 564сум/мес</button>
+                            <h3>Водонагреватель Royal R WH 2.0 80L</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket upper__basket">
+                                    <h2>В корзину</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <div class="upper__frist__button">
+                                <button type="button" class="btn btn-success sucsess new__btn">Хит продаж</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                            <img src="./img/upper__img6.jpeg" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">2 410 000 cум</p>
+                            <h4>2 006 000 cум</h4>
+                            <button type="button" class="btn basic btn-color">от 230 690сум/мес</button>
+                            <h3>Пылесос Samsung VCC8835V37/XEV</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket upper__basket">
+                                    <h2>В корзину</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <div class="upper__frist__button">
+                                <button type="button" class="btn btn-success sucsess new__btn">Хит продаж</button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                            </div>
+                            <img src="./img/upper__img7.webp" alt="Artel tv" width="189" height="190">
+                            <p>5 801 000 cум</p>
+                            <h4>5 209 000 cум cум</h4>
+                            <button type="button" class="btn basic btn-color">от 599 034сум/мес</button>
+                            <h3>Телевизор Artel A55LU8500</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket upper__basket">
+                                    <h2>В корзину</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel -->
+                    <div id="demo" class="carousel slide ps5__carusel" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/partner.webp" alt="Los Angeles" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/ps5.jpeg" alt="Chicago" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+                    </div>
+                    <div class="tv__cards__heading">
+                        <h3>Предложение недели</h3>
+                    </div>
+                    <div class="house__hold__cards">
+                        <div class="frist__tv__card">
+                            <img src="./img/house__img1.webp" alt="Artel tv" width="189" height="190">
+                            <p class="margin-top">7 368 000 cум</p>
+                            <h4>5 774 000 cум</h4>
+                            <button type="button" class="btn basic">от 664 009сум/мес</button>
+                            <h3>Машина посудомоечная SHIVAKI DW 1408 </h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <img src="./img/home__img2.jpeg" alt="Artel tv" width="189" height="190">
+                            <p>7 542 000 cум</p>
+                            <h4>6 715 000 cум</h4>
+                            <button type="button" class="btn basic">от 772 225сум/мес</button>
+                            <h3>Холодильник ARTEL HD455RWENE INVERTER White</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <img src="./img/house__img3.jpeg" alt="Artel tv" width="189" height="190">
+                            <p>7 579 000 cум</p>
+                            <h4>6 753 000 cум</h4>
+                            <button type="button" class="btn basic">от 776 595сум/мес</button>
+                            <h3>Кондиционер Avalon AVL-12 HQ Wi-Fi</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <img src="./img/house__img4.jpeg" alt="Artel tv" width="189" height="190">
+                            <p>15 519 000 cум</p>
+                            <h4>14 058 000 cум</h4>
+                            <button type="button" class="btn basic">от 1 616 670сум/мес</button>
+                            <h3>Кондиционер Avalon AVL-24FQ</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <img src="./img/house__img5.webp" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>2 919 000 cум</h4>
+                            <button type="button" class="btn basic">от 335 684сум/мес</button>
+                            <h3>Мясорубка Kenwood MG516</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <img src="./img/house__img6.webp" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>2 739 000 cум</h4>
+                            <button type="button" class="btn basic">от 314 984сум/мес</button>
+                            <h3>Соковыжималка Moulinex ZU150110</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card">
+                            <img src="./img/house__img7.webp" alt="Artel tv" width="189" height="190">
+                            <p class="p-opacty">3 161 000 cум</p>
+                            <h4>2 028 000 cум</h4>
+                            <button type="button" class="btn basic">от 233 220сум/мес</button>
+                            <h3>Воздухоувлажнитель Polaris PUH 0806Di</h3>
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <div class="first__tv__card__footer">
+                                <div class="footer__basket">
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+
+                                    
+                                </div>
+                                <div class="footer__scales">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></svg>
+
+                                    </button>
+                                </div>
+                                <div class="footer__hearth">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tv__cards__heading">
+                        <h3>Ноутбуки</h3>
+                    </div>
+                    <div class="all__computer__card">
+                        <div class="frist__tv__card aligin-items">
+                            <img src="./img/computer__img1.webp" alt="computer img" width="190" height="190">
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <h3 id="text-align">Ноутбук ASUS X1500E I7-1165G7/8GB/512GB SSD+32GB OPTANE</h3>
+                            <h4>8 150 000 cум</h4>
+                            <div class="computer__card__footer">
+                                <h3 class="h3-background">от 937 250cум</h3>
+                                <h3 class="h3-padding">*12 мес</h3>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card aligin-items">
+                            <img src="./img/computer__img2.jpeg" alt="computer img" width="190" height="190">
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <h3 id="text-align">Ноутбук LENOVO IP 3 15ITL6 I3-1115G4/8/SSD 256/D Artic Grey</h3>
+                            <h4>5 563 000 cум</h4>
+                            <div class="computer__card__footer">
+                                <h3 class="h3-background">от 639 744cум</h3>
+                                <h3 class="h3-padding">*12 мес</h3>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card aligin-items">
+                            <img src="./img/computer__img3.jpeg" alt="computer img" width="190" height="190">
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <h3 id="text-align">Ноутбук Lenovo Ideapad 3 15ALC6 AMD Ryzen 7 5700U/8 GB/HDD 1TB</h3>
+                            <h4>7 007 000 cум</h4>
+                            <div class="computer__card__footer">
+                                <h3 class="h3-background">от 805 805cум</h3>
+                                <h3 class="h3-padding">*12 мес</h3>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card aligin-items">
+                            <img src="./img/computer__img4.webp" alt="computer img" width="190" height="190">
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <h3 id="text-align">Ноутбук HP 17-CN1003CA i5-1155G7/8GB/SSD/512GB</h3>
+                            <h4>7 983 000 cум</h4>
+                            <div class="computer__card__footer">
+                                <h3 class="h3-background">от 918 045cум</h3>
+                                <h3 class="h3-padding">*12 мес</h3>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card aligin-items">
+                            <img src="./img/computer__img5.webp" alt="computer img" width="190" height="190">
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <h3 id="text-align">Ноутбук Lenovo IdeaPad Gaming 3 15IHU6 I7-11370H 8/512 GB SSD VGA4 RTX3050TI</h3>
+                            <h4>14 699 000 cум</h4>
+                            <div class="computer__card__footer">
+                                <h3 class="h3-background">от 169 385cум</h3>
+                                <h3 class="h3-padding">*12 мес</h3>
+                            </div>
+                        </div>
+                        <div class="frist__tv__card aligin-items">
+                            <img src="./img/computer__img6.jpeg" alt="computer img" width="190" height="190">
+                            <div class="reiting">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <img src="./img/star.png" alt="star">
+                                <span>24</span>
+                            </div>
+                            <h3 id="text-align">Ноутбук Asus TUF FX517Z i7-12650H/16GB/1 TB SSD</h3>
+                            <h4>14 450 000 cум</h4>
+                            <div class="computer__card__footer">
+                                <h3 class="h3-background">от 937 250cум</h3>
+                                <h3 class="h3-padding">*12 мес</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tv__cards__heading">
+                        <h3>Популярные бренды</h3>
+                    </div>
+                    <div class="all__company__logo">
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img1.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img2.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img3.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img4.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img5.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img6.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img7.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img8.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img9.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img10.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img11.png" alt="Artel company logo">
+                        </div>
+                        <div class="frist__logo">
+                            <img width="128" height="64" src="./img/logo__img12.png" alt="Artel company logo">
+                        </div>
+                    </div>
+                    <div class="tv__cards__heading">
+                        <h3>Почему именно Mediapark?</h3>
+                    </div>
+                    <div class="about__mediapark">
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img1.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Удобная доставка</h3>
+                                <p>Гарантируем надежную и безопасную доставку вашего товара в выбранное вами время.</p>
+                            </div>
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img2.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Любой способ оплаты</h3>
+                                <p>Оплачивайте покупки не только через национальные платёжные системы, но и  с помощью VISA и Mastercard.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img3.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Гарантия и надёжный сервис</h3>
+                                <p>Гарантия на 1 год на все товары, включая бесплатную доставку и ремонт от компании.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img4.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Доступные и низкие цены</h3>
+                                <p>Мы предлагаем вам товары по конкурентоспособным ценам.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img5.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Магазины по всему Узбекистану</h3>
+                                <p>У нас есть 38 торговых точек по всей стране.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img6.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Грандиозные акции и скидки</h3>
+                                <p>У нас всегда действуют ежедневные скидки и большие ежемесячные акции.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img7.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Можно и в рассрочку</h3>
+                                <p>Оплачивайте по частям и получите все, что хотите прямо сейчас.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img8.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Услуга самовывоза</h3>
+                                <p>Заберите свои покупки, когда вам будет удобно.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img9.svg" alt="truck icon">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Обмен и возврат товаров</h3>
+                                <p>При наличии дефектов, вы можете легко обменять товар  на другой или вернуть деньги.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img10.svg">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Качественное обслуживание</h3>
+                                <p>Наши консультанты каждый месяц проходят спец-обучения для улучшения качества</p>
+                            </div>
+                            
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__card__img">
+                                <img src="./img/about__img11.svg">
+                            </div>
+                            <div class="delivery__card__text">
+                                <h3>Наличие предзаказов </h3>
+                                <p>Вы можете заранее заказать самые горячие новинки вместе с Mediapark.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="container hero__contenier">
+            <div class="hero__text">
+                <h2>Твой магазин в Твоём телефоне</h2>
+                <p> Найдите смартфоны, планшеты и все виды актуальной электроники в мобильном приложении MEDIAPARK.</p>
+                <div class="hero__buttons">
+                    <a href="#"><img src="./img/apstore.svg" alt="apstore icon"></a>
+                    <a href="#"><img src="./img/googleplay.svg" alt="play market icon"></a>
+                    <a href="#"> <img src="./img/huaweistore.svg" alt="huaweistore icon"></a>
+                </div>
+            </div>
+            <div class="hero__img">
+                <img src="./img/storeimg.webp" alt="storeimg">
+            </div>
+        </div>
+    </section>
+    <footer>
+            <div class="footer__top">
+                <div class="container footer__top__container">
+                    <nav>
+                        <img src="./img/media__icon.png" width="155" height="20">
+                        <p>Возникли вопросы? Готовы помочь:</p>
+                        <a href="#">+998 71 203 33 33</a>
+                        <span>График работы:</span>
+                        <h3>Пн-Вс : 09:00 - 21:00</h3>
+                    </nav>
+                    <div class="footer__links">
+                        <div class="cards__item">
+                            <p>Способы оплаты</p>
+                            <div class="item__logo">
+                                <div class="img__card">
+                                    <img width="80" height="40" src="./img/humo.svg" alt="humo">
+                                </div>
+                                <div class="img__card">
+                                    <img width="25" height="40" src="./img/uzcard.svg" alt="humo">
+                                </div>
+                                <div class="img__card">
+                                    <img width="80" height="80" src="./img/click.svg" alt="humo">
+                                </div>
+                                <div class="img__card">
+                                    <img width="80" height="40" src="./img/payme.svg" alt="humo">
+                                </div>
+                                <div class="img__card">
+                                    <img width="55" height="40" src="./img/visa.svg" alt="humo">
+                                </div>
+                                <div class="img__card">
+                                    <img width="40" height="40" src="./img/mastercard.svg" alt="humo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="information">
+                            <h3>Информация</h3>
+                            <div class="information__links">
+                                <a href="#">О нас</a>
+                                <a href="#">Гарантия</a>
+                                <a href="#">Адреса магазинов</a>
+                                <a href="#">Акции</a>
+                            </div>
+                        </div>
+                        <div class="information">
+                            <h3>Услуги</h3>
+                            <div class="information__links">
+                                <a href="#">Услуги</a>
+                                <a href="#">Способы оплаты</a>
+                                <a href="#">Всё о рассрочке</a>
+                                <a href="#">Партнёрство</a>
+                                <a href="#">Возврат товара</a>
+                            </div>
+                        </div>
+                        <div class="information">
+                            <h3>Для покупателей</h3>
+                            <div class="information__links">
+                                <a href="#">Доставка</a>
+                                <a href="#">Свяжитесь с нами!</a>
+                                <a href="#">Сервисный центр</a>
+                                <a href="#">Оставить отзыв</a>
+                                <a href="#">Вакансииs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container footer__bottom__contenier">
+                    <a href="#">© Все права защищены.</a>
+                    <div class="social__network">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

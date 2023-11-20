@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Golos Text', sans-serif;
+}
+$transision: all 0.6s ease-out;
+@import "./_header__top.scss";
+@import "./header__nav";
+@import "./main__top";
+@media screen and (max-width:1400px) {
+    .input__img{
+        max-width: 400px;
+        width: 100%;
+    }
+    .header__nav__contenier{
+        max-width: 1150px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .logo{
+        display: none;
+    }
+    .header__links{
+        display: none;
+    }
+    #none{
+        display: none !important;
+    }
+    #input{
+        max-width: 1024px;
+        width: 100%;
+    }
+    .header__nav__contenier{
+        max-width: 1024px;
+    }
+    .footer__top{
+        display: none;
+    }
+    .hero__img{
+        display: none;
+    }
+}
+@media screen and (max-width:1024px) {
+    .logo{
+        display: none;
+    }
+    .header__links{
+        display: none;
+    }
+    #none{
+        display: none !important;
+    }
+    #input{
+        max-width: 1024px;
+        width: 100%;
+    }
+    .header__nav__contenier{
+        max-width: 740px;
+    }
+    .header__top{
+        display: none;
+    }
+    .footer__top{
+        display: none;
+    }
+    .hero__img{
+        display: none;
+    }
+}

@@ -1,0 +1,495 @@
+.main__top__heading{
+    margin-top: 36px;
+}
+.main__top__contenier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(29 36 47);
+    }
+    a{
+        text-decoration: none;
+        font-weight: 700;
+        color: rgb(11 43 94);
+        font-size: 14px;
+        transition: $transision;
+        &:hover{
+            color: gray;
+        }
+    }
+}
+.top__cards__contenier{
+    overflow: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    max-width: 1410px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    a{
+        .main__top__frist{
+            width: 226px;  
+            border: 1px solid rgb(245 245 246);
+            border-radius: 18px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 16px;
+            padding-right: 16px;
+            left: 0;
+            gap: 16px;
+            display: flex;
+            align-items: center;
+        }
+        text-decoration: none;
+        svg{
+            padding: 10px;
+            background-color:  rgba(217,46,21,.06);
+            border-radius: 10px;
+            path{
+                fill:#d92e15;
+            }
+            width: 48px;
+            height: 48px;
+        }
+        span{
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(29 36 47);
+        }
+    }
+}
+.tv__cards__heading{
+    h3{
+        font-size: 24px;
+        color: rgb(29 36 47);
+        font-weight: 700;
+    }
+}
+.frist__tv__card{
+    max-width: 215px;
+    padding: 12px;
+    .p-opacty{
+        opacity: 0;
+    }
+    p{
+        font-weight: 500;
+        color: rgb(108 113 120);
+        font-size: 12px;
+        text-decoration: line-through;
+        margin-top: 8px;
+    }
+    .sucsess{
+        display: block;
+        color: rgb(255, 255, 255);
+        background: rgb(14, 126, 46);
+        font-size: 12px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    h4{
+        font-size: 18px;
+        color: rgb(29 36 47);
+        margin-top: 4px;
+        font-weight: bolder;
+    }
+    .basic{
+        font-weight: 400;
+        font-size: 14px;
+        padding: 4px 12px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        border-radius: 8px;
+        border: 1px solid rgb(11 43 94);
+        opacity: 0.8;
+    }
+    h3{
+        font-size: 14px;
+        color: rgb(108 113 120);
+        line-height: 150%;
+        font-weight: 400;
+        text-align: left;
+        height: 38px;
+        overflow: hidden;
+        margin-top: 12px;
+        -webkit-box-orient: vertical;
+       
+    }
+    .reiting{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        img{
+            width: 16px;
+            height: 24px;
+        }
+        span{
+            line-height: 14px;
+            font-size: 14px;
+            color: rgb(108 113 120);
+            font-weight: 500;
+        }
+    }
+}
+.first__tv__card__footer{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    
+    button{
+        border: none;
+    }
+    .footer__basket{
+        padding: 14px;
+        background-color: rgb(217 46 21);
+        border-radius: 10px;
+        svg{
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            fill: white;
+                stroke: white;
+            path{
+                fill: white;
+                stroke: white;
+            }
+        }
+    }
+    .footer__scales{
+        padding: 14px;
+        background-color: rgb(247 248 248);
+        border-radius: 10px;
+        svg{
+            width: 20px;
+            height: 20px;
+        path{
+            stroke: gray;
+            fill: gray;
+            }
+        }
+    }
+    .footer__hearth{
+        @extend .footer__scales;
+    }
+}
+.all__tv__cards{
+    display: flex;
+    justify-content: space-between;
+}
+.new__btn{
+    background-color:rgb(211, 33, 64) !important;
+    border: none !important;
+}
+.tv__cards__heading{
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+.all__new__cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    gap: 6px;
+}
+.all__tv__cards{
+    @extend .all__new__cards;
+}
+.upper__cards{
+    .frist__tv__card{
+        .btn-color{
+            border: none;
+            background-color:rgb(253 245 243) ;
+            color: rgb(217 46 21);
+
+        }
+        .upper__frist__button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .new__btn{
+                background: rgb(255, 0, 84) !important;
+            }
+            svg{
+                width: 20px;
+                height: 20px;
+                path{
+                    fill: gray;
+                }
+            }
+        }
+        .upper__basket{
+            width: 100%;
+            max-height: 52px;
+            h2{
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 0px;
+            }
+        } 
+    }
+}
+.upper__cards{
+    @extend .all__new__cards;
+}
+.ps5__carusel{
+    margin-top: 54px;
+    margin-bottom: 32px;
+}
+.house__hold__cards{
+    @extend .all__new__cards;
+}
+.aligin-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#text-align{
+    text-align: center;
+    max-width: 200px;
+}
+.computer__card__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px ;
+    background-color: rgb(248 248 249);
+    border-radius: 12px;
+    height: auto ;
+    h3{
+        margin: 0px;
+        color: rgb(29 36 47);
+        font-weight: 500;
+    }
+}
+.h3-background{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.h3-padding{
+    padding: 11px;
+}
+.all__computer__card{
+    @extend .all__new__cards;
+}
+.frist__logo{
+    padding: 31px 52px;
+    border: rgb(245 245 246) 2px solid;
+    border-radius: 20px;
+    max-width: 238px;
+    imG{
+        justify-content: center;
+    }
+}
+.all__company__logo{
+    @extend .all__new__cards;
+    gap: 30px;
+}
+.delivery__card{
+    padding: 16px;
+    max-width: 226px;
+    width: 100%;
+    height: 238px;
+    border-radius: 20px;
+    border: rgb(245 245 246) 2px solid;
+    .delivery__card__img{
+        padding: 12px;
+        background-color: rgb(253 245 243);
+        border-radius: 10px;
+        width: 48px;
+        height: 48px;
+    }
+    .delivery__card__text{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 190px;
+        height: 114px;
+        margin-top: 16px;
+        h3{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            color: rgb(108 113 120);
+            line-height: 150%;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+.about__mediapark{
+    @extend .all__new__cards;
+    height: 300px;
+}
+.hero{
+    background-color:rgb(248 248 249) ;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 330px;
+    margin-top: 72px;
+    position: relative;
+    .hero__contenier{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .hero__img{
+        position: absolute;
+        right: 0;
+        top: -36px;
+    }
+    .hero__text{
+        position: absolute;
+        bottom: -300px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        h2{
+            font-size: 32px;
+            font-weight: 700;
+        }
+        p{
+            color: rgb(108 113 120);
+            line-height: 24px;
+            font-weight: 400;
+            width: 368px;
+        }
+        .hero__buttons{
+            gap: 16px;
+            display: flex;
+        }
+    }
+}
+.footer__top{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 64px;
+    padding-bottom: 48px;
+     background-color: rgb(29 36 47);
+     nav{
+        span{
+            font-size: 14px;
+            color: white;
+            font-weight: 500;
+            display: block;
+        }
+        p{
+            font-size: 14px;
+            color: white;
+            font-weight: 500;
+            margin-top: 32px;
+            margin-bottom: 10px;
+        }
+        a{
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        h3{
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+     }
+}
+.img__card{
+    background-color: rgb(34 44 58);
+    align-items: center;
+    width: 144px;
+    height: 53px;
+    border-radius: 12px;
+    justify-content: center;
+    display: flex;
+}
+.item__logo{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 341px;
+}
+.cards__item{
+    p{
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+.information{
+    width: 193px;
+    .information__links{
+
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    h3{
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+        a{
+            margin-left: 0px;
+            color: rgb(245 245 246);
+            opacity: 0.5;
+            font-weight: 400;
+            font-size: 14px;
+            text-decoration: none;
+            transition: $transision;
+            &:hover{
+                opacity: 1;
+            }
+        }
+}
+.footer__top__container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__links{
+    @extend .footer__top__container;
+    gap: 20px;
+}
+.social__network{
+    display: flex;
+    gap: 24px;
+    svg{
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+}
+.footer__bottom{
+    background-color: rgb(34 44 58);
+}
+.footer__bottom__contenier{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    a{
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
