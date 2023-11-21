@@ -80,6 +80,7 @@ body {
 }
 
 .header__nav__contenier {
+  z-index: 30;
   position: sticky;
   justify-content: space-between;
   align-items: center;
@@ -149,6 +150,10 @@ body {
   font-weight: 700;
   color: rgb(29, 36, 47);
   font-size: 14px;
+}
+
+.carousel-inner {
+  position: relative;
 }
 
 .header__top__sleder {

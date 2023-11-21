@@ -1,6 +1,7 @@
 .header__nav__contenier{
     max-width: 1326px;
     padding-top: 10px;
+
     padding-bottom: 10px;
     width: 100%;
     
@@ -12,6 +13,7 @@
     top: 0;
 }
 .header__nav__contenier{
+    z-index: 30;
     position:sticky;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +33,7 @@
         display: flex;
         max-width: 100%;
         gap: 16px;
+        
         button{
             background-color: rgb(217 46 21);
             color: white;
@@ -86,6 +89,9 @@
             font-size: 14px;
         }
     }
+}
+.carousel-inner{
+    position: relative;
 }
 .header__top__sleder{
     padding: 6px 15px 16px;
