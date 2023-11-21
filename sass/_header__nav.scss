@@ -7,10 +7,12 @@
 }
 .header__nav{
     position: sticky;
+    
     background-color: white;
     top: 0;
 }
 .header__nav__contenier{
+    position:sticky;
     justify-content: space-between;
     align-items: center;
     display: flex;
